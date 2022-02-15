@@ -1,0 +1,51 @@
+.about {
+
+    min-height    : 100vh;
+    padding-bottom: 3rem;
+
+    .image {
+        padding: 2rem;
+
+        img {
+            height    : 45rem;
+            object-fit: cover;
+            box-shadow: 2.5rem 2.5rem 0 1rem var(--themeColor);
+        }
+    }
+
+    .info {
+        padding   : 2rem;
+        margin-top: 3rem;
+
+        h2 {
+            @include fontStyle(3rem, var(--themeColor));
+        }
+
+        p {
+            margin     : 2rem 0;
+            line-height: 2;
+            @include fontStyle(1.8rem, var(--font2));
+        }
+
+        .icons {
+
+        }
+
+        .icons a {
+            height          : 4rem;
+            width           : 4rem;
+            line-height     : 4rem;
+            text-align      : center;
+            background-color: var(--font2);
+            border-radius   : .5rem;
+            margin-right    : 1rem;
+            @include fontStyle(2rem, var(--white));
+
+            &:hover {
+                background-color: var(--themeColor);
+                color           : var(--white);
+            }
+
+        }
+    }
+}
