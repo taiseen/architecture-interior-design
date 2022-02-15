@@ -27,10 +27,6 @@
             @include fontStyle(1.8rem, var(--font2));
         }
 
-        .icons {
-
-        }
-
         .icons a {
             height          : 4rem;
             width           : 4rem;
@@ -39,6 +35,7 @@
             background-color: var(--font2);
             border-radius   : .5rem;
             margin-right    : 1rem;
+            text-decoration : none;
             @include fontStyle(2rem, var(--white));
 
             &:hover {
