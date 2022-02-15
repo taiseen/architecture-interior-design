@@ -7,6 +7,7 @@
     --black     : #111;
     --white     : #fff;
     --font1     : #666;
+    --font2     : #444;
     --boxShadow : 0 .2rem .5rem rgba(0, 0, 0, .3);
     --border    : .1rem solid rgba(0, 0, 0, .3)
 }
@@ -19,7 +20,7 @@
     outline        : none;
     list-style     : none;
     user-select    : none;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform : capitalize;
     box-sizing     : border-box;
     font-family    : 'Exo 2', sans-serif;
@@ -68,8 +69,21 @@ section {
     }
 }
 
+.heading {
+    @include fontStyle(4rem, #444);
+    margin               : 2rem 0;
+    padding-top          : 0rem;
+    text-align           : center;
+    letter-spacing       : 1.7rem;
+    text-decoration      : underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--themeColor);
+    text-underline-offset: -1.5rem;
+}
+
 
 
 @import 'header';
 @import 'home';
+@import 'about';
 @import 'responsiveness';

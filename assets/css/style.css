@@ -5,6 +5,7 @@
   --black: #111;
   --white: #fff;
   --font1: #666;
+  --font2: #444;
   --boxShadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
   --border: .1rem solid rgba(0, 0, 0, .3)
 ;
@@ -20,7 +21,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-decoration: none;
+  text-decoration: none !important;
   text-transform: capitalize;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -66,6 +67,21 @@ section {
 
 section:last-of-type {
   margin-bottom: 0;
+}
+
+.heading {
+  font-size: 4rem;
+  color: #444;
+  margin: 2rem 0;
+  padding-top: 0rem;
+  text-align: center;
+  letter-spacing: 1.7rem;
+  text-decoration: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  -webkit-text-decoration-color: var(--themeColor);
+          text-decoration-color: var(--themeColor);
+  text-underline-offset: -1.5rem;
 }
 
 .header {
@@ -189,6 +205,57 @@ section:last-of-type {
   font-size: 2rem;
 }
 
+.about {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+.about .image {
+  padding: 2rem;
+}
+
+.about .image img {
+  height: 45rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 2.5rem 2.5rem 0 1rem var(--themeColor);
+          box-shadow: 2.5rem 2.5rem 0 1rem var(--themeColor);
+}
+
+.about .info {
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.about .info h2 {
+  font-size: 3rem;
+  color: var(--themeColor);
+}
+
+.about .info p {
+  margin: 2rem 0;
+  line-height: 2;
+  font-size: 1.8rem;
+  color: var(--font2);
+}
+
+.about .info .icons a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background-color: var(--font2);
+  border-radius: .5rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.about .info .icons a:hover {
+  background-color: var(--themeColor);
+  color: var(--white);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -276,6 +343,12 @@ section:last-of-type {
   }
   .home .counting .box .count {
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .home .hero .text1 {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
