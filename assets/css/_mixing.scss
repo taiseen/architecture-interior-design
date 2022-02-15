@@ -1,0 +1,18 @@
+@mixin grid($value) {
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
+    gap                  : 2rem;
+}
+
+@mixin flex {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+    gap            : 1rem;
+}
+
+@mixin fontStyle($size, $color) {
+    font-size: $size;
+    color    : $color;
+}

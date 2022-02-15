@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* 15 - Feb - 2022   */
+
+:root {
+    --themeColor: #ff7a00;
+    --black     : #111;
+    --white     : #fff;
+    --font1     : #666;
+    --boxShadow : 0 .2rem .5rem rgba(0, 0, 0, .3);
+    --border    : .1rem solid rgba(0, 0, 0, .3)
+}
+
+
+* {
+    margin         : 0;
+    padding        : 0;
+    border         : 0;
+    outline        : none;
+    list-style     : none;
+    user-select    : none;
+    text-decoration: none;
+    text-transform : capitalize;
+    box-sizing     : border-box;
+    font-family    : 'Exo 2', sans-serif;
+    transition     : all .1s linear;
+}
+
+@import 'mixing';
+
+
+/*
+    100% / 16px = 6.25%
+    6.25% == 1px 
+
+    6.25% * 10 = 62.5% 
+    62.5% == 10px
+*/
+html {
+    font-size         : 62.5%;
+    overflow-x        : hidden;
+    scroll-behavior   : smooth;
+    scroll-padding-top: 6rem;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--black);
+    }
+}
+
+/* 
+Style Scale for all 
+but in responsive - its resizing at 991px
+*/
+section {
+    padding      : 2rem 7%;
+    margin-bottom: 3rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+
+
+@import 'header';
+@import 'home';
+@import 'responsiveness';

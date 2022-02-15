@@ -1,0 +1,104 @@
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+
+        .fa-bars {
+            display: block;
+        }
+
+        .fa-times {
+            color     : tomato;
+            transform : rotate(180deg);
+            transition: transform .1s linear;
+        }
+
+        .navBar {
+            position        : fixed;
+            top             : 6rem;
+            right           : -120%;
+            width           : 100vw;
+            height          : calc(100vh - 6rem);
+            background-color: rgba(0, 0, 0, .2);
+            border-top      : var(--border);
+            z-index         : 1000;
+            transition      : right .3s linear;
+
+            &.userClick {
+                right: 0;
+            }
+
+            ul {
+                height          : 100%;
+                width           : 33rem;
+                background-color: rgba(255, 255, 255, .95);
+                flex-flow       : column;
+                justify-content : center;
+                float           : right;
+
+                li {
+                    margin: 1rem 0;
+
+                    a {
+                        display      : block;
+                        padding      : 1rem 0;
+                        width        : 25rem;
+                        text-align   : center;
+                        border-radius: 5rem;
+                        border       : var(--border);
+                        text-align   : center;
+
+                        &:hover {
+                            background-color: #333;
+                            color           : #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        .counting .box {
+            flex: 1;
+        }
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .home {
+        .hero {
+            .text1 {
+                width    : 35rem;
+                font-size: 3.5rem;
+            }
+
+            .text2 {
+                width    : 30rem;
+                font-size: 2.5rem;
+            }
+        }
+
+        .counting .box {
+
+            .count {
+                font-size: 5rem;
+            }
+        }
+    }
+}

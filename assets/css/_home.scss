@@ -1,0 +1,57 @@
+.home {
+
+    .hero {
+        min-height         : 60vh;
+        background         : url(../img/bg.jpg) no-repeat;
+        background-size    : cover;
+        background-position: center;
+        display            : flex;
+        align-items        : center;
+
+        .text1,
+        .text2 {
+            padding      : 1rem 2rem;
+            text-align   : center;
+            opacity      : 0.8;
+            border-radius: .5rem;
+        }
+
+        .text1 {
+            font-size : 5rem;
+            width     : 45rem;
+            background: #FFF;
+        }
+
+        .text2 {
+            font-size : 3rem;
+            width     : 35rem;
+            margin-top: 1rem;
+            background: var(--themeColor);
+            color     : var(--white);
+        }
+    }
+
+    .counting {
+
+        @include flex;
+        min-height: 40vh;
+        padding   : 2rem 0;
+
+        .box {
+            margin    : 2rem 4rem;
+            text-align: center;
+
+            .count {
+                font-size: 7rem;
+                color    : #444;
+            }
+
+            h3 {
+                color    : var(--themeColor);
+                font-size: 2rem;
+            }
+
+        }
+
+    }
+}

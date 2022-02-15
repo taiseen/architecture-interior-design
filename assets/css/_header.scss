@@ -1,0 +1,39 @@
+.header {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    width           : 100%;
+    background-color: var(--white);
+    z-index         : 100;
+    padding         : 1rem 2rem;
+    box-shadow      : var(--boxShadow);
+
+    .logo img {
+        height: 4rem;
+    }
+
+    .navBar ul {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-around;
+
+        li {
+            margin: 0 1rem;
+
+            a {
+                @include fontStyle(2rem, var(--font1));
+
+                &:hover {
+                    color          : var(--black);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .fa-bars {
+        display: none;
+        cursor : pointer;
+        @include fontStyle(2.5rem, var(--font1));
+    }
+}
