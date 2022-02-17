@@ -22,9 +22,10 @@
 
             a {
                 @include fontStyle(2rem, var(--font1));
+                text-decoration: none;
 
                 &:hover {
-                    color          : var(--black);
+                    color          : var(--themeColor);
                     text-decoration: none;
                 }
             }

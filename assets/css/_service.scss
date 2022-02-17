@@ -1,0 +1,33 @@
+.service {
+
+    min-height: 100vh;
+
+    .box-container {
+
+        width          : 90%;
+        display        : flex;
+        justify-content: center;
+        flex-wrap      : wrap;
+
+        .box {
+            height       : 25rem;
+            width        : 25rem;
+            margin       : 2rem 3rem;
+            padding-top  : 6rem;
+            text-align   : center;
+            box-shadow   : var(--boxShadow);
+            border-left  : .5rem solid var(--themeColor);
+            border-right : .5rem solid var(--themeColor);
+            border-radius: .5rem;
+
+            .fas {
+                @include fontStyle(5rem, var(--themeColor));
+            }
+
+            p {
+                padding-top: 1rem;
+                @include fontStyle(1.2rem, var(--font2));
+            }
+        }
+    }
+}

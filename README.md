@@ -4,12 +4,20 @@
 
 Inspire & Learning From ==> [this link](https://youtu.be/cuNyE3SxFlk)
 
+## Dependency 
+
+[Light Gallery :- CDN](https://cdnjs.com/libraries/lightgallery-js) | 
+[CSS](https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css) | 
+[JS](https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js)
+
+
 
 ## Using Technology 
 - HTML 
 - SASS 
 - Bootstrap (twitter 4.5.3)
 - JavaScript
+- JS -> magnific-popup.js + css CDN Link 
 
 
 ## Learning Context
@@ -19,4 +27,4 @@ Inspire & Learning From ==> [this link](https://youtu.be/cuNyE3SxFlk)
 - Text underline offset
 - Responsiveness
 
-<img src="./assets/img/demo.png"/>
+<!-- <img src="" alt="Demo Link"/> -->

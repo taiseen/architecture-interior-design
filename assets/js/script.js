@@ -3,6 +3,9 @@
 const menu = document.querySelector('.fa-bars');
 const navbar = document.querySelector('.navBar');
 
+const allImg = document.querySelector('.projects .box-container');
+lightGallery(allImg);
+
 
 menu.addEventListener('click', () => {
 
@@ -41,8 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
 window.addEventListener('scroll', () => {
 
     menu.classList.remove('fa-times');
@@ -53,40 +54,4 @@ window.addEventListener('scroll', () => {
     } else {
 
     }
-
 });
-
-// swiper-slider functionality...
-
-// let swiper = new Swiper('.reviews-slider', {
-
-//     loop: true,
-//     grabCursor: true,
-//     spaceBetween: 20,
-
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction: false,
-//     },
-
-//     pagination: {
-//         el: '.swiper-pagination',
-//         type: "fraction",
-//         clickable: true,
-//     },
-
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-
-//     breakpoints: {
-//         0: {
-//             slidesPerView: 1,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//         },
-//     },
-
-// });
