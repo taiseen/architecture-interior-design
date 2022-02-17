@@ -1,0 +1,88 @@
+.footer {
+    background-color: var(--font2);
+    text-align      : center;
+
+    .row {
+        width      : 100%;
+        margin-left: 0;
+        padding    : 1rem;
+
+
+        .lastLogo {
+
+            img {
+                width        : 15rem;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                @include fontStyle(1.2rem, var(--white));
+            }
+        }
+
+        h2 {
+            @include fontStyle(2.5rem, var(--white));
+        }
+
+        p {
+            @include fontStyle(1.5rem, var(--white));
+        }
+
+        .list {
+            display  : flex;
+            flex-flow: column;
+
+            a {
+                text-decoration: none;
+                @include fontStyle(1.7rem, #bbb);
+            }
+        }
+
+
+        .letter {
+
+            p {
+                @include fontStyle(1.5rem, #bbb);
+            }
+
+            input[type="email"] {
+                background: none;
+                margin-top: 1rem;
+                padding   : 2rem 1.5rem;
+                height    : 3rem;
+                width     : 80%;
+                border    : .1rem solid var(--white);
+                @include fontStyle(1.5rem, var(--white));
+            }
+
+            input[type="submit"] {
+                background   : var(--white);
+                margin-top   : 1rem;
+                padding      : 1rem 0;
+                width        : 10rem;
+                border-radius: .5rem;
+                @include fontStyle(1.6rem, var(--black));
+
+                &:hover {
+                    background-color: var(--themeColor);
+                    color           : var(--white);
+                }
+            }
+        }
+    }
+
+    .credit {
+        @include fontStyle(2rem, var(--white));
+        width         : 100%;
+        text-align    : center;
+        padding       : 1rem 0;
+        margin        : 1rem 0;
+        margin-bottom : 0;
+        border-top    : .1rem solid #aaa;
+        letter-spacing: .2rem;
+
+        span {
+            color: var(--themeColor)
+        }
+    }
+}

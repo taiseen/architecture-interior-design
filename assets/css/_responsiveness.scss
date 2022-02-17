@@ -50,7 +50,11 @@
                 float           : right;
 
                 li {
-                    margin: 1rem 0;
+                    margin: 1.5rem 0;
+
+                    &:last-of-type{
+                        margin-bottom: 25rem;
+                    }
 
                     a {
                         display        : block;
@@ -99,6 +103,37 @@
 
             .count {
                 font-size: 5rem;
+            }
+        }
+    }
+
+
+    .service .box-container .box {
+        height: 25rem;
+        width : 35rem;
+    }
+
+    .projects .box-container .box {
+        height: 25rem;
+        width : 40rem;
+    }
+
+
+
+    .contact .form-container {
+        margin-top: 2rem;
+
+        form input,
+        textarea {
+            padding: 1rem;
+            margin : 1rem 0;
+        }
+
+        .inputBox {
+            flex-direction: column;
+
+            input {
+                width: 100%;
             }
         }
     }

@@ -10,21 +10,22 @@ Inspire & Learning From ==> [this link](https://youtu.be/cuNyE3SxFlk)
 [CSS](https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css) | 
 [JS](https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js)
 
-
-
 ## Using Technology 
-- HTML 
-- SASS 
-- Bootstrap (twitter 4.5.3)
-- JavaScript
-- JS -> magnific-popup.js + css CDN Link 
 
+* HTML 
+* SASS 
+* Bootstrap 5
+* JavaScript
+* JS -> Light Gallery.js + CSS CDN Link 
 
 ## Learning Context
-- SASS ==> variable , nesting , @mixing + @include 
-- Right Side Toggle Menu 
-- Number increment system
-- Text underline offset
-- Responsiveness
 
-<!-- <img src="" alt="Demo Link"/> -->
+* SASS ==> variable , nesting , @mixing + @include 
+* Right Side Toggle Menu 
+* Loading number increment++ system
+* Text underline offset
+* Light Gallery for Images
+* Responsiveness
+
+<br/>
+<img src="https://i.ibb.co/DC95Lxq/Architecture-and-Interior-Design.jpg" alt="Demo"/>

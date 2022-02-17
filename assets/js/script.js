@@ -8,10 +8,14 @@ lightGallery(allImg);
 
 
 menu.addEventListener('click', () => {
-
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('userClick');
+});
 
+
+window.addEventListener('scroll', () => {
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('userClick');
 });
 
 
@@ -41,17 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
     counter('count2', 0, 14, 5000);
     counter('count3', 0, 215, 7000);
     counter('count4', 0, 350, 7000);
-});
-
-
-window.addEventListener('scroll', () => {
-
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('userClick');
-
-    if (window.scrollY > 80) {
-
-    } else {
-
-    }
 });

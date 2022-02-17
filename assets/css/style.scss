@@ -52,7 +52,7 @@ html {
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: var(--black);
+        background-color: var(--themeColor);
     }
 }
 
@@ -71,14 +71,14 @@ section {
 
 .heading {
     @include fontStyle(4rem, #444);
-    margin                       : 2rem 0;
-    padding-top                  : 0rem;
-    text-align                   : center;
-    letter-spacing               : 1.7rem;
-    text-decoration              : underline;
-    text-decoration-style        : solid;
-    text-decoration-color        : var(--themeColor);
-    text-underline-offset        : -1.5rem;
+    margin               : 2rem 0;
+    padding-top          : 0rem;
+    text-align           : center;
+    letter-spacing       : 1.7rem;
+    text-decoration      : underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--themeColor);
+    text-underline-offset: -1.5rem;
 }
 
 
@@ -89,4 +89,5 @@ section {
 @import 'service';
 @import 'projects';
 @import 'contact';
+@import 'footer';
 @import 'responsiveness';
